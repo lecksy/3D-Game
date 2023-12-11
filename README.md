@@ -1,10 +1,13 @@
 # 3D-Game
-Context and date
-Description
+Project 5 for MSCH-220
+Dec 10, 2023
+A 3D FPS game that is lightly inspired by Among Us.
 
 ## Implementation
+Godot 4
 
 ## What Makes this a Game?
+This is a game because the player is able to control their character and there are challenges to overcome.
 
 ## References
 Inspired by the game Among Us
@@ -22,6 +25,7 @@ Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&utm_
 
 
 ## Future Development
+In the future, I would like to improve my enemies for sure and maybe make game as a whole more on theme with my original ambitions.
 
 ## Created by
 Lexi Scanlon
