@@ -7,6 +7,12 @@ Description
 ## What Makes this a Game?
 
 ## References
+Inspired by the game Among Us
+https://kenney.nl/assets/shooting-gallery
+https://kenney.nl/assets/blaster-kit
+https://opengameart.org/content/muzzle-flash-with-model
+https://opengameart.org/content/bullet-decal
+https://www.patreon.com/posts/blender-export-16916038
 
 ## Future Development
 
