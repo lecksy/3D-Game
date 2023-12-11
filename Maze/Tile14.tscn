@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://dxjf807oko7sm"]
+[gd_scene load_steps=17 format=3 uid="uid://dxjf807oko7sm"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_625vx"]
 albedo_color = Color(0.807843, 0.831373, 0.854902, 1)
@@ -6,6 +6,12 @@ albedo_color = Color(0.807843, 0.831373, 0.854902, 1)
 [sub_resource type="BoxMesh" id="BoxMesh_ip3x2"]
 material = SubResource("StandardMaterial3D_625vx")
 size = Vector3(0.1, 2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oelbw"]
+albedo_color = Color(0.501961, 0.654902, 0.682353, 1)
+metallic = 0.79
+metallic_specular = 0.86
+roughness = 0.22
 
 [sub_resource type="BoxShape3D" id="5"]
 size = Vector3(0.1, 2, 2)
@@ -17,6 +23,12 @@ albedo_color = Color(0.807843, 0.831373, 0.854902, 1)
 material = SubResource("StandardMaterial3D_giqhy")
 size = Vector3(2, 2, 0.1)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ytv2m"]
+albedo_color = Color(0.501961, 0.654902, 0.682353, 1)
+metallic = 0.79
+metallic_specular = 0.86
+roughness = 0.22
+
 [sub_resource type="BoxShape3D" id="7"]
 size = Vector3(2, 2, 0.1)
 
@@ -26,6 +38,12 @@ albedo_color = Color(0.807843, 0.831373, 0.854902, 1)
 [sub_resource type="BoxMesh" id="BoxMesh_uw5o4"]
 material = SubResource("StandardMaterial3D_75gr2")
 size = Vector3(0.1, 2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7017d"]
+albedo_color = Color(0.501961, 0.654902, 0.682353, 1)
+metallic = 0.79
+metallic_specular = 0.86
+roughness = 0.22
 
 [sub_resource type="BoxShape3D" id="9"]
 size = Vector3(0.1, 2, 2)
@@ -37,6 +55,9 @@ albedo_color = Color(0.286275, 0.313726, 0.341176, 1)
 material = SubResource("StandardMaterial3D_lta4f")
 size = Vector3(2, 0.1, 2)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6hste"]
+albedo_color = Color(0.407843, 0.47451, 0.447059, 1)
+
 [sub_resource type="BoxShape3D" id="12"]
 size = Vector3(2, 0.1, 2)
 
@@ -47,6 +68,7 @@ size = Vector3(2, 0.1, 2)
 [node name="E" type="MeshInstance3D" parent="StaticBody"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0)
 mesh = SubResource("BoxMesh_ip3x2")
+surface_material_override/0 = SubResource("StandardMaterial3D_oelbw")
 
 [node name="E_Collision" type="CollisionShape3D" parent="StaticBody"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0)
@@ -55,6 +77,7 @@ shape = SubResource("5")
 [node name="S" type="MeshInstance3D" parent="StaticBody"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1)
 mesh = SubResource("BoxMesh_m6iwq")
+surface_material_override/0 = SubResource("StandardMaterial3D_ytv2m")
 
 [node name="S_Collision" type="CollisionShape3D" parent="StaticBody"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1)
@@ -63,6 +86,7 @@ shape = SubResource("7")
 [node name="W" type="MeshInstance3D" parent="StaticBody"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1, 0)
 mesh = SubResource("BoxMesh_uw5o4")
+surface_material_override/0 = SubResource("StandardMaterial3D_7017d")
 
 [node name="W_Collision" type="CollisionShape3D" parent="StaticBody"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1, 0)
@@ -70,6 +94,7 @@ shape = SubResource("9")
 
 [node name="Ground" type="MeshInstance3D" parent="StaticBody"]
 mesh = SubResource("BoxMesh_5naoo")
+surface_material_override/0 = SubResource("StandardMaterial3D_6hste")
 
 [node name="Ground_Collision" type="CollisionShape3D" parent="StaticBody"]
 shape = SubResource("12")
